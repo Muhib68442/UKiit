@@ -1,6 +1,6 @@
 @media screen and (min-width : 992px){
     *{
-        
+        /* background-color: var(--bg); */
     }
     .main{
         background-color: var(--bg);
@@ -8,7 +8,9 @@
         font-family: Font1;
     }
 
-
+    .main{
+        min-height: 100vh;
+    }
     .toolkit-section{
         padding: 20px;
         padding-top: 37px;
@@ -27,7 +29,6 @@
         width: 15%;
         border-radius: 18px;
         margin: 20px;
-
     }
     .toolkit-logo{
         width: 100%;
@@ -120,5 +121,6 @@
     .toolkit-logo-bg{
         border-radius: 15px;
     }
+    
 
 }

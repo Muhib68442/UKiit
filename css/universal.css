@@ -5,6 +5,7 @@
     scroll-behavior: smooth;
 }
 
+
 /******* Fonts *******/
 @font-face {
     font-family: Font1;
@@ -18,12 +19,17 @@
 /******* Colors *******/
 /* Followed Theme : #1176ff */
 
-:root {
-    --theme: #1176ff; /* prev. green : 76b900*/
-    --bg   : #171717; /* #010101 */
-    --text : #eeeeee; /* #ffffff */
+
+ :root {
+    --theme: #1176ff; 
+    --bg   : #171717; 
+    --text : #eeeeee; 
     --dim  : #aaaaaa;
-}
+    --bgh: #222222;
+} 
+
+
+
 
 /******* ScrollBar *******/
 ::-webkit-scrollbar {
