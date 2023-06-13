@@ -38,7 +38,7 @@
     /******* Option *******/
     .option-section{
         background-color: var(--bg);
-        padding: 10px 0px;
+        padding: 10px 0px 40px 0px;
     }
 
     .option-wrapper{
@@ -96,7 +96,7 @@
     }
     .option:hover .option-logo-svg{
         fill: var(--theme);
-        stroke: var(--theme);
+        /* stroke: var(--theme); */
         transition: 0.1s;
     }
     .option:hover .option-name{
@@ -166,6 +166,43 @@
         width: 20%;
     }
 
+    .wrapper3{
+        padding-top: 25px;
+        padding-bottom: 10px;
+        height: 30vh;
+    }
+    .accessories{
+        width: 20%;
+        height: 25vh;
+
+    }
+    .accessories a svg{
+        width: 20%;
+    }
+    .customize{
+        width: 30%;
+        height: 25vh;
+    }
+    .customize a svg{
+        width: 15%;
+    }
+    .tutorial{
+        width: 20%;
+        height: 25vh;
+
+    }
+    .tutorial a svg{
+        width: 20%;
+    }
+    .suggession{
+        width: 25%;
+        height: 25vh;
+
+    }
+    .suggession a svg{
+        width: 20%;
+    }
+
 }
 
 @media screen and (max-width: 1280px) and (max-height: 720px) {
@@ -177,4 +214,59 @@
     .option{
         height: auto;
     }
+
+
+    .accessories{
+        width: 20%;
+        height: vh;
+
+    }
+    .suggession{
+        width: 25%;
+        height: vh;
+
+    }
+    .tutorial{
+        width: 20%;
+        height: vh;
+
+    }
+    .customize{
+        width: 35%;
+        height: vh;
+    }
+}
+@media screen and (max-width: 1280px) and (max-height: 1024px){
+    .intro-text{
+        position: absolute;
+        top: 30%;
+        left: 25%;
+    }
+    .wrapper3{
+        padding: 0px;
+        height: 25vh;
+    }
+
+    .accessories{
+        width: 20%;
+        height: 20vh;
+
+    }
+    .suggession{
+        width: 25%;
+        height: 20vh;
+
+    }
+    .tutorial{
+        width: 20%;
+        height: 20vh;
+
+    }
+    .customize{
+        width: 35%;
+        height: 20vh;
+    }
+
+    
+
 }
