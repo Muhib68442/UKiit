@@ -96,4 +96,7 @@
     .c2{
         display: none;
     }
+    .accessories, .tutorial, .suggestion, .customize{
+        display: none;
+    }
 }
