@@ -99,6 +99,10 @@
         font-family: Font1;
         color: var(--text);
     }
+    .details-text a{
+        color: var(--dim);
+        text-decoration: none;
+    }
     .details-li{
         color: var(--dim);
         font-size: 20px;
@@ -127,7 +131,7 @@
         margin: 0 auto;
     }
     .copyright{
-        color: var(--text);
+        color: var(--theme);
         font-size: 20px;
         font-family: Font1;
         margin: 0px;

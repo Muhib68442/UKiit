@@ -2,7 +2,7 @@
     /*******PC SCREEN CSS*******/
     .intro{
         margin: 0;
-        padding: 0px 0px 10px 0px;
+        padding: 0px 0px 0px 0px;
         background-color: var(--bg);
     }
     .intro-text{
@@ -33,12 +33,33 @@
         display: none;
     }
 
+    .intro-textarea{
+        padding: 20px 0px;
+        /* background-color: red; */
+        color: var(--text);
+        font-family: Font1;
+
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .intro-textarea h3{
+        font-family: fontDesc;
+        letter-spacing: 3px;
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .intro-textarea p{
+        font-size: 20px;
+        font-family: fontDesc;
+    }
+
 
 
     /******* Option *******/
     .option-section{
         background-color: var(--bg);
-        padding: 10px 0px 40px 0px;
+        padding: 0px 0px 40px 0px;
     }
 
     .option-wrapper{
@@ -48,11 +69,12 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 98%;        
+        width: 96%;      
+        padding-bottom: 10px;  
     }
     
     .option{
-        /* border: 3px solid var(--theme); */
+        border-bottom: 4px solid var(--bg);
         margin: 0px 13px;
         padding: 8px;
         height: auto;
@@ -60,10 +82,8 @@
         transition: 0.1s;
         background-color: var(--bgh);
         border-radius: 10px;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
     .option-logo-svg{
-        width: 25%;
         padding: 0px;
         display: block;
         margin: 20px auto;
@@ -86,13 +106,18 @@
     }
     .option-link{
         text-decoration: none;
-
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
     }
     .option:hover{
-        background-color: #222222;
+        background-color: var(--bghh);
         border: none;
-        border-bottom: 4px solid var(--theme);
+        /* border-bottom: 4px solid var(--theme); */
         transition: 0.2s;
+        box-shadow: var(--shadow);
+
     }
     .option:hover .option-logo-svg{
         fill: var(--theme);
@@ -111,97 +136,58 @@
     }
 
 
-
-
-
-    .wrapper-r2{
-        width: 98%;
-        margin-top: 20px;
-        display: flex;
-        justify-content: space-between;
-    }
-
     .c-link{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: row;
         padding: 10px 20px;
-        text-decoration: none;
     }
 
     .c1, .c2, .c3{
-        height: 17vh;
+        /* height: 17vh; */
     }
-
-
-    .option-text h3,p{
-        text-align: right;
-    }
-
 
     .c1-logo, .c2-logo, .c3-logo{
         margin: 0;
         padding: 10px;
-        width: 16%;
         fill: var(--theme);
     }
-    .c3-logo{
-        width: 38%;
-    }
-    .c2-logo{
-        width: 16%;
-    }
+
+    /**** LOGO SECTION ****/
+    .esoft-logo         {width: 22%;}
+    .opt-logo           {width: 22%;}
+    .os-logo            {width: 27%;padding-top: 0;margin-top: 14px;}
+    .tips-logo          {width: 22%;}
+
+    .c1-logo            {width: 15%;}
+    .c2-logo            {width: 16%;}
+    .c3-logo            {width: 38%;}
+
+    .accessories a svg  {width: 20%;}
+    .customize a svg    {width: 15%;}
+    .tutorial a svg     {width: 25%;padding-bottom:15px;}
+    .suggession a svg   {width: 20%;}
+
+    
     .righty{
         text-align: right !important;
     }
-
-
-    .c1{
-        width: 45%;
-    }
-    .c2{
-        width: 35%;
-    }
-    .c3{
-        width: 20%;
-    }
+    
 
     .wrapper3{
-        padding-top: 25px;
+        /* padding-top: 25px; */
         padding-bottom: 10px;
-        height: 30vh;
+        /* height: 30vh; */
+        /* background-color: red; */
     }
-    .accessories{
-        width: 20%;
-        height: 25vh;
 
-    }
-    .accessories a svg{
-        width: 20%;
-    }
-    .customize{
-        width: 30%;
-        height: 25vh;
-    }
-    .customize a svg{
-        width: 15%;
-    }
-    .tutorial{
-        width: 20%;
-        height: 25vh;
 
-    }
-    .tutorial a svg{
-        width: 20%;
-    }
-    .suggession{
-        width: 25%;
-        height: 25vh;
-
-    }
-    .suggession a svg{
-        width: 20%;
-    }
+    /*** CUSTOM WIDTH OF CARDS ***/
+    .c1{width: 45%;}
+    .c2{width: 35%;}
+    .c3{width: 20%;}
+    .accessories{width: 20%;}
+    .customize{width: 30%;}
+    .tutorial{width: 20%;}
+    .suggession{width: 25%;}
 
 }
 
@@ -215,7 +201,6 @@
         height: auto;
     }
 
-
     .accessories{
         width: 20%;
         height: vh;
@@ -229,7 +214,6 @@
     .tutorial{
         width: 20%;
         height: vh;
-
     }
     .customize{
         width: 35%;
@@ -270,3 +254,57 @@
     
 
 }
+
+/**** SWITCH *****/
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+    margin: 20px 20px 20px 0px;
+    float: right;
+  }
+  
+  input[type="checkbox"]:focus {
+    outline: 0;
+  }
+  
+  .toggle {
+    height: 32px;
+    width: 53px;
+    border-radius: 50px;
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    border: 2px solid var(--theme);
+    background: linear-gradient(180deg, #2D2F39 0%, #1F2027 100%);
+    transition: all .2s ease;
+  }
+  
+  .toggle:after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: var(--inverse);
+    box-shadow: 0 1px 2px rgba(44,44,44,.2);
+    transition: all .2s cubic-bezier(.5,.1,.75,1.35);
+  }
+  
+  .toggle:checked {
+    border-color: var(--theme);
+    background: var(--theme);
+  }
+  .toggle:not(:checked) {
+    border-color: var(--theme);
+    background: var(--bg);
+  }
+  
+  .toggle:checked::after {
+      transform: translatex(20px);
+  }
+  

@@ -14,24 +14,21 @@
     .toolkit-section{
         padding: 20px;
         padding-top: 37px;
-        width: 37%;
+        width: 48%;
         margin: 0 auto;
     }
     .toolkit{   
-        border-bottom: 3px solid var(--theme);
+        border: 3px solid var(--bgh);
+        box-shadow: var(--bgh) 0px 5px 15px;
+        border-radius: 17px;
+        padding: 10px 20px;
         display: flex;
         align-items: center;
 
     }
-    .toolkit-logo-bg{
-        background-color: var(--theme);
-        display: block;
-        width: 15%;
-        border-radius: 18px;
-        margin: 20px;
-    }
+
     .toolkit-logo{
-        width: 100%;
+        width: 15%;
         display: block;
     }
     .toolkit-option{
@@ -45,12 +42,15 @@
         padding: 20px;
         text-align: right;
     }
+
     .toolkit-name{
         text-align: right;
-        font-size: 22px;
+        font-size: 24px;
     }
     .toolkit-desc{
         font-size: 18px;
+        padding: 5px;
+        margin: 0;
     }
     .download-btn{
         transition: 0.2s;
@@ -60,18 +60,28 @@
         text-decoration: none;
         padding: 8px 18px;
         margin: 8px 18px;
-        border-bottom: 3px solid var(--theme);
+        border: 3px solid var(--theme);
+        border-radius: 50px;
         color: var(--text);
         font-size: 18px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
     }
     .download-btn:hover{
         transition: 0.2s;
         background-color: var(--theme);
-        border-radius: 50px;
-
+        color: var(--bg);
+        font-weight: 700;
     }
-
-
+    .fa-download{
+        color: var(--theme);
+        padding: 0px 10px 0px 0px;
+    }
+    .download-btn:hover .fa-download{
+        color: var(--bg) !important;
+    }
+    
 
 
 
@@ -100,17 +110,45 @@
         color: var(--text);
     }
     .details-li{
-        color: var(--dim);
+        color: var(--text);
         font-size: 20px;
         font-family: Font1;
         margin-left: 33px;
+        line-height: 30px;
     }
     .details-li::marker{
         color: var(--text);
     }
-    .ver{
+    ol{
+        list-style-type: lower-roman;
+        padding: 10px;
+    }
+    .code{
+        font-family: monospace;
+        color: var(--text);
+        font-weight: lighter;
+        padding: 1px;
+    }
+    .step{
         color: var(--theme);
     }
+    .note{
+        padding-left: 20px;
+        border-left: 2px solid var(--bs-danger);
+    }
+    .success{
+        color: var(--bs-success);
+        padding-left: 20px;
+        border-left: 2px solid var(--bs-success);
+    }
+    .description{
+        font-size: 27px;
+        padding: 0px 25px;
+        font-family: fontDesc;
+        line-height: 50px;
+        /* word-spacing: 4px; */
+    }
+
 }
 
 

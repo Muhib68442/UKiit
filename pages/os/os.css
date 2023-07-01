@@ -94,6 +94,38 @@
         font-size: 25px;
     }
 
+    .onlinereference-heading{
+        color: var(--theme);
+        font-family: Font1;
+        font-size: 22px;
+        padding: 0px 10px;
+    }
+    .onlinereference-wrapper{
+        display: flex;
+        align-items: center;
+        width: 50%;
+        margin: 10px auto;
+        text-align: center;
+    }
+    .onlinereference-title{
+        color: var(--text);
+        font-family: Font1;
+        text-decoration: none;
+        font-size: 20px; 
+    }
+    .onlinereference-link{
+        color: var(--theme);
+        font-family: Font1;
+        text-decoration: none;
+        font-size: 20px;
+        background-color: var(--bgh);
+        padding: 8px 10px;
+        margin: 10px;
+    }
+    .wrapper-y{
+        display: flex;
+        align-items: center;
+    }
 }
 
 

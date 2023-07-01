@@ -15,26 +15,54 @@
     font-family: Font2;
     src: url('../fonts/Roboto-Light.ttf');
 }
+@font-face {
+    font-family: fontDesc;
+    src: url('../fonts/Quicksand-Light.ttf');
+}
 
 /******* Colors *******/
 /* Followed Theme : #1176ff */
 
-
- :root {
+:root {
     --theme: #1176ff; 
     --theme-d: #00419c; 
     --bg   : #171717; 
     --text : #eeeeee; 
     --dim  : #aaaaaa;
     --bgh: #222222;
-} 
+    --bghh: #282828;
+    --inverse : #dddddd;
+    --shadow : #1176ff 0px 0px 25px;
+    --transparent : 
+  }
+  
+  [data-theme="light"] {
+    --theme: #1176ff; 
+    --theme-d: #00419c; 
+    --bg   : #e1f5fe; 
+    --text : #000000; 
+    --dim  : #505050;
+    --bgh: #d3e4fd;
+    --bghh: #bbd4fd;
+    --inverse : #444444;
+    --shadow : #1176ff 0px 0px 25px;
+    --transparent : transparent;
 
+  }
+  
+
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    visibility: hidden;
+    }
 
 
 
 /******* ScrollBar *******/
 ::-webkit-scrollbar {
-    width: 8px;
+    width: 6px;
     height: 10px;
 }
 ::-webkit-scrollbar-track {
@@ -73,11 +101,12 @@
     background-color: transparent;
 }
 .back-button:hover{
+
     transition: 0.2s;
     border: none;
-    border-radius: 2px;
+    border-radius: 4px !important; 
     border-bottom: 3px solid var(--theme);
-    background-color: #313131;
+    background-color: var(--bgh);
 }
 .back-button a:hover{
     color: var(--theme);
@@ -102,11 +131,12 @@ header{
     transition: 0.2s;
 }
 .dotted-hr{
-    border: 6px dotted white;
+    border: 6px dotted var(--inverse);
     border-bottom: none;
     margin: 0 auto;
     margin-top: 20px;
     width: 100px;
+    background-color: var(--bg);
 }
 
 @media screen and (max-width: 1280px) and (max-height: 720px)

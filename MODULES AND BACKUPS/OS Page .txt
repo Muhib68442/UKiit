@@ -1,0 +1,11 @@
+add 4 OS 
+	Windows 10 Pro
+	Windows 11
+	Linux 
+	Ubuntu
+	
+	UNIX
+	MacOS
+	MS-DOS
+	Android/Chromium
+

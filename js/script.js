@@ -1,20 +1,4 @@
-// Click Text To Copy
-const copyTextElements = document.querySelectorAll('.copy-text');
-
-copyTextElements.forEach(function (element) {
-  element.addEventListener('click', function () {
-    const selection = window.getSelection();
-    const range = document.createRange();
-    range.selectNodeContents(element);
-    selection.removeAllRanges();
-    selection.addRange(range);
-    document.execCommand('copy');
-    alert('Command copied to clipboard!');
-  });
-});
-
-
-// SEARCH 
+// SEARCH //
 
 function searchFunction() {
   let input = document.querySelector('.search-input').value;
@@ -44,7 +28,6 @@ function searchFunction() {
     }
   }
 }
-
 function closeFunction() {
   // clear the search input
   document.querySelector('.search-input').value = '';
@@ -65,7 +48,6 @@ function closeFunction() {
     card.style.display = 'block';
   }
 }
-
 function handleEnterKey(event) {
   if (event.keyCode === 13) {
     // user pressed the Enter key
@@ -76,16 +58,7 @@ function handleEnterKey(event) {
 
 
 
-/* Click to show Wallpaper or Icon (Switcher) */
-
-// function showContent(section) {
-//   document.querySelectorAll('.content-section').forEach(function(el) {
-//       el.style.display = 'none';
-//   });
-//   document.getElementById(section).style.display = 'block';
-
-//   document.querySelector('.personalize-show-default').style.display = 'none';
-// }
+// SWITCHER (Wallpaper | Icon) //
 
 function showContent(section, link) {
   document.querySelectorAll('.content-section').forEach(function(el) {
@@ -100,3 +73,60 @@ function showContent(section, link) {
   });
   link.classList.add('active');
 }
+
+
+
+// FEATURES : 
+
+// Light & Dark Mode Switch //
+
+document.addEventListener('DOMContentLoaded', function() {
+  const toggleSwitch = document.querySelector('.toggle');
+  const coverImage = document.querySelector('.pc-cover');
+
+  // Apply the saved theme on page load
+  const currentTheme = localStorage.getItem('theme');
+  if (currentTheme) {
+    document.documentElement.setAttribute('data-theme', currentTheme);
+    coverImage.src = `res/intro/pc-cover-${currentTheme}.jpg`;
+
+    if (currentTheme === 'light') {
+      toggleSwitch.checked = true;
+    }
+  }
+
+  function switchTheme(e) {
+    if (e.target.checked) {
+      document.documentElement.setAttribute('data-theme', 'light');
+      coverImage.src = 'res/intro/pc-cover-light.jpg';
+      localStorage.setItem('theme', 'light');
+    } else {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      coverImage.src = 'res/intro/pc-cover-dark.jpg';
+      localStorage.setItem('theme', 'dark');
+    }
+  }
+
+  toggleSwitch.addEventListener('change', switchTheme, false);
+});
+
+// Click To Copy //
+const copyTextElements = document.querySelectorAll('.copy-text');
+
+copyTextElements.forEach(function (element) {
+  element.addEventListener('click', function () {
+    const selection = window.getSelection();
+    const range = document.createRange();
+    range.selectNodeContents(element);
+    selection.removeAllRanges();
+    selection.addRange(range);
+    document.execCommand('copy');
+    alert('Command copied to clipboard!');
+  });
+});
+
+
+// Font Loads First // 
+document.fonts.ready.then(function() {
+  document.body.style.visibility = 'visible';
+});

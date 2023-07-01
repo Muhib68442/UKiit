@@ -58,8 +58,8 @@
         margin-left: 87px;
     }
     .shortcut-table{
-        /* border: 2px solid var(--theme); */
-        
+        background-color: var(--bgh) !important;
+        border: 1px solid var(--text) !important;
     }
 
     .shortcut-table thead tr th{

@@ -1,6 +1,6 @@
 body {
     min-height: 100vh;
-    background-color: var(--bg);
+    background-color: var(--bg) !important;
   }
   
 @media screen and (min-width : 992px){
@@ -95,10 +95,10 @@ body {
         width: 23%;
         margin: 18px;
         height: 43vh;
-        border: 2px solid var(--theme) !important;
+        border: 1px solid var(--theme) !important;
         border-radius: 10px;
         transition: 0.2s;
-        background-color: transparent !important;
+        background-color: var(--bgh);
     }    /* .card:hover{
         background-color: #000000;
         border: 3px solid var(--theme);
@@ -106,10 +106,10 @@ body {
         transition: 0.1s;
     } */
     .card:hover{
-        background-color: #222222;
-        border: 2px solid black !important;
-        border-radius: 20px;
-        border-bottom: 5px solid var(--theme) !important;
+        background-color: var(--bghh);
+        border: none !important;
+        border-radius: 10px;
+        /* border-bottom: 5px solid var(--theme) !important; */
         transition: 0.2s;
         box-shadow: 0px 0px 30px 2px var(--theme);
     }
@@ -152,7 +152,7 @@ body {
         margin-top: -30px;
     }
     .card-download-link{
-        border: 2px solid var(--theme);
+        border: 1px solid var(--theme);
         text-decoration: none;
         font-family: Font2;
         color: var(--text);
