@@ -117,7 +117,6 @@
         /* border-bottom: 4px solid var(--theme); */
         transition: 0.2s;
         box-shadow: var(--shadow);
-
     }
     .option:hover .option-logo-svg{
         fill: var(--theme);
@@ -191,6 +190,7 @@
 
 }
 
+
 @media screen and (max-width: 1280px) and (max-height: 720px) {
     .intro-text{
         font-size: 28px;
@@ -200,60 +200,55 @@
     .option{
         height: auto;
     }
+    .option-name{
+        font-size: 20px;
+    }
 
-    .accessories{
-        width: 20%;
-        height: vh;
+    .option-desc{
+        font-size: 15px;
+    }
+    .option:hover .option-name{
+        font-size: 22px;  
+    }
 
-    }
-    .suggession{
-        width: 25%;
-        height: vh;
 
+    .wrapper3{
+        margin-top: 10px !important;
     }
-    .tutorial{
-        width: 20%;
-        height: vh;
-    }
-    .customize{
-        width: 35%;
-        height: vh;
-    }
+    .c1{width: 45%; height:17vh !important;}
+    .c2{width: 35%; height:17vh !important;}
+    .c3{width: 20%; height:17vh !important;}
+    .accessories{width: 20%;height:27vh !important;}
+    .customize{width: 25%;  height:27vh !important;}
+    .tutorial{width: 20%;   height:27vh !important;}
+    .suggession{width: 35%; height:27vh !important;}
 }
+
+
 @media screen and (max-width: 1280px) and (max-height: 1024px){
-    .intro-text{
-        position: absolute;
-        top: 30%;
-        left: 25%;
+
+    .option:hover .option-name{
+        font-size: 22px !important;
     }
     .wrapper3{
         padding: 0px;
         height: 25vh;
     }
 
-    .accessories{
-        width: 20%;
-        height: 20vh;
+    .c1{width: 45%; height:14vh !important;}
+    .c2{width: 35%; height:14vh !important;}
+    .c3{width: 20%; height:14vh !important;}
+    .accessories{width: 20%;height:23vh !important;}
+    .customize{width: 25%;  height:23vh !important;}
+    .tutorial{width: 20%;   height:23vh !important;}
+    .suggession{width: 35%; height:23vh !important;}
 
-    }
-    .suggession{
-        width: 25%;
-        height: 20vh;
-
-    }
-    .tutorial{
-        width: 20%;
-        height: 20vh;
-
-    }
-    .customize{
-        width: 35%;
-        height: 20vh;
-    }
-
-    
-
+    .option-desc{font-size: 15px;}
+    .esoft-logo{width: 18%;}
+    .suggestion a svg{width: 14% !important;}
 }
+
+
 
 /**** SWITCH *****/
 input[type="checkbox"] {
