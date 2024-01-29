@@ -67,9 +67,9 @@
         padding: 8px 18px;
         margin: 10px;
         background-color: var(--bg);
+        border-radius: 50px;
         border: none;
         transition: 0.2s;
-        border-bottom: 2px solid var(--theme);
     }
     .adviser-contact-btn:hover{
         background-color: var(--theme);
@@ -134,17 +134,18 @@
         color: var(--text);
         font-size: 25px;
         font-family: Font1;
-        margin-top: 20px;
+        /* margin-top: 20px; */
     }
     .report-problem-text{
         font-size: 20px;
     }
     .report-name-input, .report-mail-input{
         border: none;
-        border-bottom: 3px solid var(--theme);
+        /* border: 3px solid var(--bghh) !important; */
+        /* border-bottom: 3px solid var(--theme) !important; */
         background-color: var(--bgh);
         padding: 10px 20px;
-        margin-top: 10px;
+        /* margin-top: 10px; */
         margin-left: 20px;
         color: var(--theme);
         border-radius: 8px;
@@ -175,28 +176,28 @@
         flex-direction: column;
     }
     .button-panel button{
-        padding: 8px 18px;
+        padding: 10px 24px;
         border: none;
-        border-bottom: 2px solid;
         background-color: var(--bg);
         color: var(--text);
+        border: 2px solid var(--bghh);
         /* font-weight: 700; */
         font-family: Font1;
         margin: 10px;
         transition: 0.1s;
     }
     .submit-btn{
-        border-color: var(--theme) !important;
+        border-radius: 6px;
     }
     .reset-btn{
-        border-color: #f65050 !important;
+        border-radius: 6px;
     }
     .submit-btn:hover{
-        border: 3px solid var(--theme);
+        background-color: var(--theme);
         transition: 0.1s;
     }
     .reset-btn:hover{
-        border: 3px solid var(--theme);
+        background-color: #f65050;
         transition: 0.1s;
     }
     
@@ -213,10 +214,9 @@
         background-color: var(--bg);
         padding-bottom: 20px;
         height: 88vh;
-
     }
     .contact-us-section{
-        padding: 40px 0px;
+        padding: 10px 0px;
         background-color: var(--bg);
         width: 90%;
         margin: 0 auto;
@@ -240,19 +240,19 @@
     }
     .adviser{
         padding: 15px 10px;
-        width: 85%;
-        border: 0px solid var(--theme);
+        width: 95%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
         margin: 10px;
+        background-color: var(--bgh);
+        border-radius: 10px;
     }
 
     .adviser-info{
         display: flex;
         flex-direction: column;
-        padding-left: 20px;
     }
     .adviser-name{
         margin: 0;
@@ -266,7 +266,6 @@
 
 
     .adviser-btn{
-        padding-right: 20px;
         display: flex;
         /* flex-direction: column; */
     }
@@ -275,13 +274,13 @@
         display: flex;
         padding: 8px 20px;
         margin: 10px;
-        background-color: var(--bg);
         border: none;
         transition: 0.2s;
-        border-bottom: 2px solid var(--theme);
+        background-color: var(--bghh);
+        border-radius: 15px;
     }
     .adviser-contact-btn:hover{
-        background-color: var(--theme);
+        background-color: var(--bg);
         color: var(--text) !important;
         transition: 0.2s;
         border-radius: 35px;

@@ -89,36 +89,67 @@ abbr{
     background-color: var(--bg);
 }
 .card{
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    padding: 20px !important;
-    width: 24% !important;
-    margin: 20px !important;
-    background-color: var(--bg) !important;
-    height: 43vh !important;
-    border: 2px solid var(--theme) !important;
+    padding: 20px;
+    width: 25%;
+    margin: 15px;
+    height: 35vh;
+    border-radius: 10px;
+    transition: 0.2s;
+    background-color: var(--bgh) !important;
+} 
+.card:hover{
+    background-color: var(--bghh);
+    border-radius: 10px;
+    /* border-bottom: 5px solid var(--theme) !important; */
+    transition: 0.2s;
+}
+.card:hover .card-name{
+    color: var(--theme);
+    transition: 0.1s;
+}
+.card:hover .card-download-link{
+    /* background-color: var(--theme); */
+    color: var(--theme);
+    border-color: var(--theme);
+    font-weight: 700;
+    transition: 0.1s;
 }
 .card-logo{
-    width: 40%;
+    width: 64px;
+    height: 64px;
     display: block;
-    margin: 0 auto;
-    padding: 25px 0px;
+    margin: 25px auto;
+    border-radius: 15px;
+    /* padding: 25px 0px; */
 }
 .card-name{
     color: var(--text);
-    font-size: 27px;
+    font-size: 25px;
     font-family: Font1;
     text-align: center;
+    margin-top: 0;
     margin-bottom: 10px;
 }
 .card-desc{
     color: var(--dim);
     font-family: Font2;
     text-align: center;
+    margin-top: 0;
     margin-bottom: 20px;
 }
-
+.crack-alert{
+    color: #f65050;
+    font-family: Font1;
+    font-size: 15px;
+    text-align: center;
+    margin-top: -30px;
+}
 .card-download-link{
-    border: 1px solid var(--theme);
+    border-radius: 50px;
+    border: 2px solid var(--bg);
     text-decoration: none;
     font-family: Font2;
     color: var(--text);
@@ -129,32 +160,15 @@ abbr{
     padding: 10px 20px;
     transition: 0.2s !important;
 }
-.card:hover{
-    background-color: #000000;
-    border: 3px solid var(--theme);
-    box-shadow: 0px 0px 10px 5px var(--theme);
-    transition: 0.1s;
-}
-.card:hover .card-name{
-    color: var(--theme);
-    transition: 0.1s;
-}
-.card:hover .card-download-link{
-    background-color: var(--theme);
-    border: 2px solid ;
-    color: #000000;
-    font-weight: 700;
-    transition: 0.1s;
-}
 .card-download-link:hover{
-    border: none !important;
-    border-bottom: 3px solid var(--theme) !important;
-    background-color: var(--bg) !important;
+    /* border: none !important; */
+    /* border-bottom: 3px solid var(--theme) !important; */
+    background-color: var(--bgh) !important;
+    font-family: 700 !important;
     color: var(--theme) !important;
     transition: 0.2s !important;
+    font-weight: 700 !important;
 }
-
-
 @media screen and (max-width:992px){
     .etools{
         display: none;

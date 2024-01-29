@@ -56,137 +56,10 @@
 
 
 
-    /******* Option *******/
-    .option-section{
-        background-color: var(--bg);
-        padding: 0px 0px 40px 0px;
-    }
-
-    .option-wrapper{
-        /* position: absolute;
-        bottom: 15px; */
-        margin: 0px auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 96%;      
-        padding-bottom: 10px;  
-    }
-    
-    .option{
-        border-bottom: 4px solid var(--bg);
-        margin: 0px 13px;
-        padding: 8px;
-        height: auto;
-        width: 27%;
-        transition: 0.1s;
-        background-color: var(--bgh);
-        border-radius: 10px;
-    }
-    .option-logo-svg{
-        padding: 0px;
-        display: block;
-        margin: 20px auto;
-        fill: var(--theme);
-    }
-
-    .option-name{
-        text-align: center !important;
-        color: var(--text);
-        margin-top: 10px;
-        font-size: 22px;
-        transition: 0.2s;
-        font-family: Font2;
-    }
-    .option-desc{
-        text-align: center !important;
-        color: var(--dim);
-        font-size: 17px;
-        transition: 0.2s;
-    }
-    .option-link{
-        text-decoration: none;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .option:hover{
-        background-color: var(--bghh);
-        border: none;
-        /* border-bottom: 4px solid var(--theme); */
-        transition: 0.2s;
-        box-shadow: var(--shadow);
-    }
-    .option:hover .option-logo-svg{
-        fill: var(--theme);
-        /* stroke: var(--theme); */
-        transition: 0.1s;
-    }
-    .option:hover .option-name{
-        color:var(--theme);
-        font-weight: 800;
-        font-size: 24px;
-        transition: 0.2s;
-    }
-    .option:hover .option-desc{
-        color: var(--text);
-        transition: 0.2s;
-    }
-
-
-    .c-link{
-        flex-direction: row;
-        padding: 10px 20px;
-    }
-
-    .c1, .c2, .c3{
-        /* height: 17vh; */
-    }
-
-    .c1-logo, .c2-logo, .c3-logo{
-        margin: 0;
-        padding: 10px;
-        fill: var(--theme);
-    }
-
-    /**** LOGO SECTION ****/
-    .esoft-logo         {width: 22%;}
-    .opt-logo           {width: 22%;}
-    .os-logo            {width: 27%;padding-top: 0;margin-top: 14px;}
-    .tips-logo          {width: 22%;}
-
-    .c1-logo            {width: 15%;}
-    .c2-logo            {width: 16%;}
-    .c3-logo            {width: 38%;}
-
-    .accessories a svg  {width: 20%;}
-    .customize a svg    {width: 15%;}
-    .tutorial a svg     {width: 25%;padding-bottom:15px;}
-    .suggession a svg   {width: 20%;}
-
-    
-    .righty{
-        text-align: right !important;
-    }
     
 
-    .wrapper3{
-        /* padding-top: 25px; */
-        padding-bottom: 10px;
-        /* height: 30vh; */
-        /* background-color: red; */
-    }
 
 
-    /*** CUSTOM WIDTH OF CARDS ***/
-    .c1{width: 45%;}
-    .c2{width: 35%;}
-    .c3{width: 20%;}
-    .accessories{width: 20%;}
-    .customize{width: 30%;}
-    .tutorial{width: 20%;}
-    .suggession{width: 25%;}
 
 }
 
@@ -226,26 +99,13 @@
 
 
 @media screen and (max-width: 1280px) and (max-height: 1024px){
-
-    .option:hover .option-name{
-        font-size: 22px !important;
+    .option-text h3{
+        font-size: 15px;
     }
-    .wrapper3{
-        padding: 0px;
-        height: 25vh;
+    .option-text p{
+        font-size: 10px !important;
     }
-
-    .c1{width: 45%; height:14vh !important;}
-    .c2{width: 35%; height:14vh !important;}
-    .c3{width: 20%; height:14vh !important;}
-    .accessories{width: 20%;height:23vh !important;}
-    .customize{width: 25%;  height:23vh !important;}
-    .tutorial{width: 20%;   height:23vh !important;}
-    .suggession{width: 35%; height:23vh !important;}
-
-    .option-desc{font-size: 15px;}
-    .esoft-logo{width: 18%;}
-    .suggestion a svg{width: 14% !important;}
+   
 }
 
 
@@ -301,5 +161,121 @@ input[type="checkbox"] {
   
   .toggle:checked::after {
       transform: translatex(20px);
+  }
+
+
+
+
+  /*** 1.0.4 Starts from here... ***/
+
+  /*** 1.0.4 CSS ***/
+  @media screen and (min-width : 992px){
+    *{
+        user-select: none;
+    }
+
+    /******* Option *******/
+    .option-section{
+        background-color: var(--bg);
+        padding: 00px 0px 40px 0px;
+    }
+
+    .option-wrapper{
+        /* position: absolute;
+        bottom: 15px; */
+        margin: 0px auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 96%;      
+        /* padding-bottom: 10px;   */
+    }
+    
+    .option{
+        /* border-bottom: 4px solid var(--bg); */
+        margin: 10px 10px;
+        padding: 8px;
+
+        transition: 0.1s;
+        background-color: var(--bgh);
+        border-radius: 10px;
+
+        /*should not oversize if small screen*/
+        /* max-width: 300px; */
+        min-height: 210px;
+
+    }
+    .option:hover{
+        transition: 0.1s;
+        background-color: var(--bghh);
+        box-shadow: 0px 0px 20px 0px var(--bgh);
+    }
+    .option:hover .option-text h3{
+        color: var(--theme) !important;
+        font-weight: 700;
+    }
+
+    .option h3{
+        text-align: center !important;
+        color: var(--text);
+        margin-top: 10px;
+        transition: 0.2s;
+        font-family: Font2;
+        font-size: 1.4rem;
+    }
+    .option p{
+        text-align: center !important;
+        color: var(--dim);
+        transition: 0.2s;
+        font-size: 1.0rem;
+    }
+    .option-link{
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between !important;
+        align-items: center;
+    }
+    
+
+    .c-link{
+        flex-direction: row;
+        padding: 10px 20px;
+    }
+    .option img{
+        width: 28%;
+        padding: 15px 0px;
+    }
+
+
+
+    .o5{width: 40% !important; min-height: 140px !important;}
+    .o6{width: 40% !important; min-height: 140px !important;}
+    .o7{width: 20% !important; min-height: 140px !important;}
+
+    .o8{width: 20% !important; min-height: 180px !important;} 
+    .o9{width: 30% !important; min-height: 180px !important;}
+    .o10{min-height: 180px !important;}
+    .o11{min-height: 180px !important;}
+
+
+    /* individual option image */
+    .o1 img{width: 31%;}
+    .o5 img{width: 15%;}
+    .o6 img{width: 15%;}
+    .o7 img{width: 30%;}
+
+    .o8 img{width: 27%;}
+    .o9 img{width: 16%;}
+    .o10 img{width: 15%;}
+    .o11 img{width: 15%;}
+
+    .o5 h3,
+    .o5 p,
+    .o6 h3,
+    .o6 p{
+        text-align: right !important;
+    }
+
   }
   

@@ -22,18 +22,17 @@
         background-color: var(--bg);
         border-radius: 3px;
         border-left: 3px solid var(--theme);
-        padding: 10px;
-        justify-content: space-between;
+        padding: 10px 20px;
         margin: 20px 0px;
         transition: 0.2s;
     }
     .option:hover{
         border: none;
+        border-radius: 15px;
         transition: 0.2s;
-        /* border: 3px solid var(--theme); */
-        box-shadow: 0px 0px 10px 5px var(--theme);
+        background-color: var(--bgh);
     }
-    .option-logo-svg{
+    .option-logo{
         fill: var(--theme);
         width: 15%;
         display: block;
@@ -42,28 +41,24 @@
     .option-text{
         padding-top: 15px;
     }
-    .option-name{
+    .option h3{
         font-family: Font1;
         font-size: 22px;
         text-align: right;
     }
-    .option-desc{
+    .option p{
         color: var(--dim);
         text-align: right;
-
+    }
+    .option img{
+        width:  64px;
+        height: 64px;
     }
     .option-link{
         text-decoration: none;
         display: flex;
         justify-content: space-between;
-
-    }
-    .c1-logo{
-        width: 25%;
-        margin-left: 13px;
-    }
-    .c2-logo{
-        width: 12%;
+        align-items: center;
     }
     .forward-text{
         padding: 10px;
@@ -82,12 +77,10 @@
     .f-text-b{
         color: var(--theme);
     }
-    .esoft{
+    .o1,.o6{
         display: none !important; 
     }
-    .c2{
-        display: none;
-    }
+
     .wrapper3{
         display:none;
     }
