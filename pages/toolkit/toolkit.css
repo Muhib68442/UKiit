@@ -142,10 +142,11 @@
         border-left: 2px solid var(--bs-success);
     }
     .description{
-        font-size: 27px;
+        font-size: 24px;
         padding: 0px 25px;
         font-family: Font1;
         line-height: 50px;
+        margin: 20px 0px;
         /* word-spacing: 4px; */
     }
 
